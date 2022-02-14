@@ -404,7 +404,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xuG-MG-KJ1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-854" y="1033"/>
+            <point key="canvasLocation" x="-410" y="1049"/>
         </scene>
         <!--좋아요-->
         <scene sceneID="0tT-jX-7XZ">
@@ -422,7 +422,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Azn-0f-CLN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="55" y="1033"/>
+            <point key="canvasLocation" x="500" y="1049"/>
         </scene>
         <!--마이-->
         <scene sceneID="rVv-dt-AQI">
@@ -438,7 +438,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sxP-jk-Do8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1046" y="1033"/>
+            <point key="canvasLocation" x="1490" y="1049"/>
         </scene>
         <!--메뉴.검색-->
         <scene sceneID="jq6-6O-8S8">
@@ -454,7 +454,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zp1-3A-Kdc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1006" y="-715"/>
+            <point key="canvasLocation" x="-1297" y="1049"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="m8S-dY-89l">
