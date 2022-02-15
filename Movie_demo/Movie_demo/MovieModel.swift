@@ -27,5 +27,5 @@ struct DataClass: Codable {
 struct Movie: Codable {
     let title: String?
     let rating: Double?
-    let medium_cover_image: String?
+    let medium_cover_image: String? // 이미지 추가
 }
