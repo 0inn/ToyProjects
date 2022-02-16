@@ -10,13 +10,14 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    var imageView: UIImageView?
 
-
+    // 첫 content view 설정
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        
+//        let vc = AdVC()
+//        vc.modalPresentationStyle = .fullScreen
+//        self.window?.rootViewController?.present(vc,animated: false, completion: nil)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -27,13 +28,25 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func sceneDidBecomeActive(_ scene: UIScene) {
-        // Called when the scene has moved from an inactive state to an active state.
-        // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
+        // active 상태로 돌아왔을 때 = 다시 앱 실행
+        if let imageView = imageView {
+            imageView.removeFromSuperview()
+            
+            // 앱
+            let alert = UIAlertController(title: "알림창", message: "이어서 사용하시겠습니까?", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "네", style: UIAlertAction.Style.default, handler: nil))
+            self.window?.rootViewController?.present(alert, animated: true, completion: nil)
+        }
     }
 
     func sceneWillResignActive(_ scene: UIScene) {
-        // Called when the scene will move from an active state to an inactive state.
-        // This may occur due to temporary interruptions (ex. an incoming phone call).
+        // will resign active 상태 = 백그라운드 진입 전 = 홈버튼 두번 = 스와이프
+        guard let window = window else {
+            return
+        }
+        imageView = UIImageView(frame: window.frame)
+        imageView?.image = UIImage(named: "launch")
+        window.addSubview(imageView!)
     }
 
     func sceneWillEnterForeground(_ scene: UIScene) {

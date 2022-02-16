@@ -9,29 +9,33 @@
 /* Begin PBXBuildFile section */
 		A9D8B20027B9FE9600712356 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D8B1FF27B9FE9600712356 /* AppDelegate.swift */; };
 		A9D8B20227B9FE9600712356 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D8B20127B9FE9600712356 /* SceneDelegate.swift */; };
-		A9D8B20427B9FE9600712356 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D8B20327B9FE9600712356 /* ViewController.swift */; };
+		A9D8B20427B9FE9600712356 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D8B20327B9FE9600712356 /* MenuVC.swift */; };
 		A9D8B20727B9FE9600712356 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9D8B20527B9FE9600712356 /* Main.storyboard */; };
 		A9D8B20927B9FE9700712356 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9D8B20827B9FE9700712356 /* Assets.xcassets */; };
 		A9D8B20C27B9FE9700712356 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9D8B20A27B9FE9700712356 /* LaunchScreen.storyboard */; };
 		A9D8B21627BB83BC00712356 /* CustomSegmentControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D8B21527BB83BC00712356 /* CustomSegmentControl.swift */; };
 		A9D8B21827BB95B300712356 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D8B21727BB95B300712356 /* MenuCell.swift */; };
-		A9D8B21C27BBA7A400712356 /* OrderList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D8B21B27BBA7A400712356 /* OrderList.swift */; };
+		A9D8B21C27BBA7A400712356 /* OrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D8B21B27BBA7A400712356 /* OrderVC.swift */; };
 		A9D8B21E27BBB60600712356 /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D8B21D27BBB60600712356 /* OrderCell.swift */; };
+		A9D8B22527BBC31000712356 /* AdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D8B22427BBC31000712356 /* AdVC.swift */; };
+		A9D8B23127BCEFFA00712356 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D8B23027BCEFFA00712356 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A9D8B1FC27B9FE9600712356 /* Starbucks_clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Starbucks_clone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9D8B1FF27B9FE9600712356 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9D8B20127B9FE9600712356 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A9D8B20327B9FE9600712356 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A9D8B20327B9FE9600712356 /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
 		A9D8B20627B9FE9600712356 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A9D8B20827B9FE9700712356 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9D8B20B27B9FE9700712356 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9D8B20D27B9FE9700712356 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9D8B21527BB83BC00712356 /* CustomSegmentControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentControl.swift; sourceTree = "<group>"; };
 		A9D8B21727BB95B300712356 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
-		A9D8B21B27BBA7A400712356 /* OrderList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderList.swift; sourceTree = "<group>"; };
+		A9D8B21B27BBA7A400712356 /* OrderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderVC.swift; sourceTree = "<group>"; };
 		A9D8B21D27BBB60600712356 /* OrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
+		A9D8B22427BBC31000712356 /* AdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdVC.swift; sourceTree = "<group>"; };
+		A9D8B23027BCEFFA00712356 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,13 +68,14 @@
 		A9D8B1FE27B9FE9600712356 /* Starbucks_clone */ = {
 			isa = PBXGroup;
 			children = (
-				A9D8B21F27BBBC9300712356 /* 주문리스트 */,
 				A9D8B1FF27B9FE9600712356 /* AppDelegate.swift */,
 				A9D8B20127B9FE9600712356 /* SceneDelegate.swift */,
-				A9D8B20327B9FE9600712356 /* ViewController.swift */,
-				A9D8B21727BB95B300712356 /* MenuCell.swift */,
-				A9D8B20527B9FE9600712356 /* Main.storyboard */,
+				A9D8B23027BCEFFA00712356 /* TabBarController.swift */,
+				A9D8B22427BBC31000712356 /* AdVC.swift */,
 				A9D8B21527BB83BC00712356 /* CustomSegmentControl.swift */,
+				A9D8B22027BBC25800712356 /* Order */,
+				A9D8B21F27BBBC9300712356 /* OrderList */,
+				A9D8B20527B9FE9600712356 /* Main.storyboard */,
 				A9D8B20827B9FE9700712356 /* Assets.xcassets */,
 				A9D8B20A27B9FE9700712356 /* LaunchScreen.storyboard */,
 				A9D8B20D27B9FE9700712356 /* Info.plist */,
@@ -78,14 +83,23 @@
 			path = Starbucks_clone;
 			sourceTree = "<group>";
 		};
-		A9D8B21F27BBBC9300712356 /* 주문리스트 */ = {
+		A9D8B21F27BBBC9300712356 /* OrderList */ = {
 			isa = PBXGroup;
 			children = (
-				A9D8B21B27BBA7A400712356 /* OrderList.swift */,
+				A9D8B21B27BBA7A400712356 /* OrderVC.swift */,
 				A9D8B21D27BBB60600712356 /* OrderCell.swift */,
 			);
-			name = "주문리스트";
+			name = OrderList;
 			path = "주문리스트";
+			sourceTree = "<group>";
+		};
+		A9D8B22027BBC25800712356 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				A9D8B20327B9FE9600712356 /* MenuVC.swift */,
+				A9D8B21727BB95B300712356 /* MenuCell.swift */,
+			);
+			path = Order;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,10 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9D8B20427B9FE9600712356 /* ViewController.swift in Sources */,
+				A9D8B20427B9FE9600712356 /* MenuVC.swift in Sources */,
 				A9D8B20027B9FE9600712356 /* AppDelegate.swift in Sources */,
 				A9D8B21E27BBB60600712356 /* OrderCell.swift in Sources */,
-				A9D8B21C27BBA7A400712356 /* OrderList.swift in Sources */,
+				A9D8B23127BCEFFA00712356 /* TabBarController.swift in Sources */,
+				A9D8B22527BBC31000712356 /* AdVC.swift in Sources */,
+				A9D8B21C27BBA7A400712356 /* OrderVC.swift in Sources */,
 				A9D8B21827BB95B300712356 /* MenuCell.swift in Sources */,
 				A9D8B20227B9FE9600712356 /* SceneDelegate.swift in Sources */,
 				A9D8B21627BB83BC00712356 /* CustomSegmentControl.swift in Sources */,

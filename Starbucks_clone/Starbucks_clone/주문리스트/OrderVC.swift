@@ -7,27 +7,29 @@
 
 import UIKit
 
-class OrderList: UIViewController {
-    
-    @IBOutlet weak var tableView: UITableView!
+class OrderVC: UIViewController {
+
+    @IBOutlet weak var bigTitle: UILabel!
+    @IBOutlet weak var orderView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemBackground
-        tableView.delegate = self
-        tableView.dataSource = self
+        //view.backgroundColor = .systemBackground
+        orderView.delegate = self
+        orderView.dataSource = self
     }
 }
 
-extension OrderList: UITableViewDelegate, UITableViewDataSource {
+extension OrderVC: UITableViewDelegate, UITableViewDataSource {
     // 데이터 개수
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return 3
     }
     
     // 데이터 셀 불러오기
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "OrderCell", for: indexPath) as! OrderCell
+        cell.selectionStyle = .none // 클릭 시 색상 변경 x
         return cell
     }
     

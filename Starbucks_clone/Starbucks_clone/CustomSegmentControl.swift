@@ -58,9 +58,9 @@ class CustomSegmetnControl: UIView {
     
     @objc func buttonAction(sender: UIButton) {
         for(buttonIndex, btn) in buttons.enumerated() {
-            btn.setTitleColor(textColor, for: .normal)
+            btn.setTitleColor(.lightGray, for: .normal)
             if btn == sender {
-                btn.setTitleColor(.green, for: .normal)
+                btn.setTitleColor(.black, for: .normal)
             }
         }
     }
