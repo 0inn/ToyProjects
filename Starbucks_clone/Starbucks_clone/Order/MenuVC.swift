@@ -20,20 +20,20 @@ class MenuVC: UIViewController {
     }
     
     private func setSegmentControl() {
-        let myCustomSegmentControl = CustomSegmetnControl(frame: CGRect(x:0, y:0, width:0, height: 200), buttonTitles: ["전체메뉴","나만의 메뉴","🎂 홀케이크 예약"])
+        let myMenuBar = MenuBar(frame: CGRect(x:0, y:0, width:0, height: 200), buttonTitles: ["전체메뉴","나만의 메뉴","🎂 홀케이크 예약"])
 
-        self.view.addSubview(myCustomSegmentControl)
-        myCustomSegmentControl.translatesAutoresizingMaskIntoConstraints = false
-        myCustomSegmentControl.widthAnchor.constraint(equalToConstant: 300).isActive = true
-        myCustomSegmentControl.heightAnchor.constraint(equalToConstant: 5).isActive = true
-        myCustomSegmentControl.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 30).isActive = true
+        self.view.addSubview(myMenuBar)
+        myMenuBar.translatesAutoresizingMaskIntoConstraints = false
+        myMenuBar.widthAnchor.constraint(equalToConstant: 300).isActive = true
+        myMenuBar.heightAnchor.constraint(equalToConstant: 5).isActive = true
+        myMenuBar.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 30).isActive = true
     }
 }
 
 extension MenuVC: UITableViewDataSource, UITableViewDelegate {
     // 데이터 개수
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 4
     }
     
     // 데이터 셀 불러오기
@@ -45,6 +45,6 @@ extension MenuVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "OrderVC") as! OrderVC
-        self.navigationController?.pushViewController(vc, animated: false)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }

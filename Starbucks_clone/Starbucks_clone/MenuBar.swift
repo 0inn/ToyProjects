@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class CustomSegmetnControl: UIView {
+class MenuBar: UIView {
     private var buttonTitles: [String]!
     private var buttons: [UIButton]!
     var textColor: UIColor = .black
@@ -51,7 +51,7 @@ class CustomSegmetnControl: UIView {
             button.backgroundColor = .white
             button.setTitleColor(textColor, for: .normal)
             button.setTitle(btnTitleItem, for:.normal)
-            button.addTarget(self, action: #selector(CustomSegmetnControl.buttonAction(sender:)), for: .touchUpInside)
+            button.addTarget(self, action: #selector(MenuBar.buttonAction(sender:)), for: .touchUpInside)
             self.buttons.append(button)
         }
     }
