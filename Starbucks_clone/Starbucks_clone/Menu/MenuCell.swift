@@ -9,8 +9,15 @@ import Foundation
 import UIKit
 
 class MenuCell: UITableViewCell {
-  
+
     @IBOutlet weak var menuImage: UIImageView!
     @IBOutlet weak var menuTitle: UILabel!
-    
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: true)
+    }
 }

@@ -14,10 +14,118 @@
             filePath = "Starbucks_clone/&#x110c;&#x116e;&#x1106;&#x116e;&#x11ab;&#x1105;&#x1175;&#x1109;&#x1173;&#x1110;&#x1173;/OrderDetail.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "82B3CB96-5336-467B-8D97-91015F3B01FB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Starbucks_clone/MenuVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "82B3CB96-5336-467B-8D97-91015F3B01FB - 6a8ac845d2278d59"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Starbucks_clone.MenuVC.menus.getter : Swift.Array&lt;Starbucks_clone.Menu&gt;"
+                  moduleName = "Starbucks_clone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/0inn/Documents/iOS_study/Starbucks_clone/Starbucks_clone/MenuVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "82B3CB96-5336-467B-8D97-91015F3B01FB - 58fa09c0c1bf834d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Starbucks_clone.MenuVC.menus.setter : Swift.Array&lt;Starbucks_clone.Menu&gt;"
+                  moduleName = "Starbucks_clone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/0inn/Documents/iOS_study/Starbucks_clone/Starbucks_clone/MenuVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "82B3CB96-5336-467B-8D97-91015F3B01FB - 142d20a9a458a568"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Starbucks_clone.MenuVC.menus.modify : Swift.Array&lt;Starbucks_clone.Menu&gt;"
+                  moduleName = "Starbucks_clone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/0inn/Documents/iOS_study/Starbucks_clone/Starbucks_clone/MenuVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "82B3CB96-5336-467B-8D97-91015F3B01FB - d20d0de01a57c7ed"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Starbucks_clone.MenuVC.menus.modify : Swift.Array&lt;Starbucks_clone.Menu&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Starbucks_clone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/0inn/Documents/iOS_study/Starbucks_clone/Starbucks_clone/MenuVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "82B3CB96-5336-467B-8D97-91015F3B01FB - 7d0a0c681a1bf246"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Starbucks_clone.MenuVC.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Starbucks_clone.MenuVC"
+                  moduleName = "Starbucks_clone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/0inn/Documents/iOS_study/Starbucks_clone/Starbucks_clone/MenuVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "124">
+               </Location>
+               <Location
+                  uuid = "82B3CB96-5336-467B-8D97-91015F3B01FB - d07ed90f7975826c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Starbucks_clone.MenuVC.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Starbucks_clone.MenuVC&gt;"
+                  moduleName = "Starbucks_clone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/0inn/Documents/iOS_study/Starbucks_clone/Starbucks_clone/MenuVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "104">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

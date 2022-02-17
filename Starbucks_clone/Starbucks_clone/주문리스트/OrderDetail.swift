@@ -10,32 +10,52 @@ import UIKit
 class OrderDetail: UIViewController {
 
     @IBOutlet weak var iceonly: UILabel!
+    @IBOutlet weak var footer: UIView!
+    @IBOutlet weak var footerBtn: UIButton!
+    @IBOutlet weak var ingView: UIView!
+    
+    var detailmenu: Menu?
+    
+    // 정보 받아올 애들
+    @IBOutlet weak var odtitle: UILabel!
+    @IBOutlet weak var odeng: UILabel!
+    @IBOutlet weak var odprice: UILabel!
+    @IBOutlet weak var detailImg: UIImageView!
+    
+    @IBAction func orderBtn(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "SelectVC") as! SelectVC
+        self.present(vc,animated: true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabBarController?.tabBar.isHidden = true
-        self.navigationController?.isNavigationBarHidden = true
+        self.title = detailmenu?.name
+        //self.navigationController?.isNavigationBarHidden = true
         setDisplay()
-        setFooter()
     }
 
     func setDisplay() {
+        odtitle.text = detailmenu?.name
+        odeng.text = detailmenu?.eng
+        odprice.text = detailmenu?.price
+        detailImg.image = UIImage(named: (detailmenu?.name)! + "d.png")
+        
         iceonly.layer.cornerRadius = 22.5
         iceonly.layer.borderWidth = 1
         iceonly.layer.borderColor = UIColor.lightGray.cgColor
+        ingView.layer.borderWidth = 1
+        ingView.layer.borderColor = UIColor.systemFill.cgColor
     }
     
-    func setFooter() {
-        let footer = UIView(frame: CGRect(x: 0, y:0, width: view.frame.size.width, height: 80))
-        footer.backgroundColor = .systemBackground
-        let footerBtn = UIButton(frame: footer.bounds)
-        footerBtn.setTitle("주문하기", for: .normal)
-        footerBtn.setTitleColor(.white, for: .normal)
-        footerBtn.backgroundColor = .green
-        footerBtn.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
-        footerBtn.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
-        footerBtn.widthAnchor.cons
-        footer.addSubview(footerBtn)
+}
+
+extension OrderDetail: OrderDelgate {
+    func passInfo(_ infos: Menu) {
+        self.odtitle?.text = infos.name
+        self.odeng.text = infos.eng
+        self.odprice.text = infos.price
+        self.detailImg.image = UIImage(named: infos.name + "d.png")
     }
     
 }
