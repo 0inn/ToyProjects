@@ -9,6 +9,9 @@ import UIKit
 
 class SelectVC: UIViewController {
 
+    var info: Menu?
+    
+    @IBOutlet weak var drinkLabel: UILabel!
     @IBOutlet weak var cntLabel: UILabel!
     @IBOutlet weak var price: UILabel!
     @IBOutlet weak var cart: UIButton!
@@ -17,7 +20,7 @@ class SelectVC: UIViewController {
     
     @IBAction func cntplus(_ sender: Any) {
         cntLabel.text = String(Int(cntLabel.text!)! + 1)
-        price.text = String(Int(price.text!)! * 2)  // Q) , 랑 같이 출력 어떻게 하지 ?
+        price.text = String(Int(price.text!)! * 2)
         btncolor()
     }
     
@@ -31,6 +34,12 @@ class SelectVC: UIViewController {
         btncolor()
     }
     
+    @IBAction func addCart(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "CartAlertVC") as! CartAlertVC
+        vc.modalPresentationStyle = .overCurrentContext
+        self.present(vc,animated: false)
+    }
+
     private func btncolor() {
         if (cntLabel.text!) == "1" {
             minus.tintColor = .lightGray
@@ -42,6 +51,8 @@ class SelectVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        drinkLabel.text = info?.name
+        price.text = info?.price
     }
 
 }

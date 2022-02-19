@@ -14,10 +14,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     // 첫 content view 설정
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        
-//        let vc = AdVC()
-//        vc.modalPresentationStyle = .fullScreen
-//        self.window?.rootViewController?.present(vc,animated: false, completion: nil)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -52,6 +48,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func sceneWillEnterForeground(_ scene: UIScene) {
         // Called as the scene transitions from the background to the foreground.
         // Use this method to undo the changes made on entering the background.
+//        let vc = AdVC()
+//        vc.modalPresentationStyle = .fullScreen
+//        self.window?.rootViewController?.present(vc,animated: false, completion: nil)
     }
 
     func sceneDidEnterBackground(_ scene: UIScene) {

@@ -33,6 +33,12 @@ class OrderVC: UIViewController {
         setInfo()
     }
     
+    @IBAction func goCart(_ sender: Any) {
+        let cart = self.storyboard?.instantiateViewController(withIdentifier: "CartVC") as! CartVC
+        cart.title = "장바구니"
+        self.navigationController?.pushViewController(cart, animated: false)
+    }
+    
     private func setInfo() {
         drinks = [Menu(name: "봄 딸기 라떼", eng: "Strawberry Milk", price: "6900"), Menu(name: "스프링 가든 자스민 드링크", eng: "Spring Garden Jasmine Drink", price: "6600"), Menu(name: "봄 딸기 그린 크림 프라푸치노", eng: "Spring Strawberry Green \n Cream Frappuccino", price: "6900")]
     }

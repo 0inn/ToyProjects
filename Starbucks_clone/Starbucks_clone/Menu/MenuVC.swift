@@ -16,9 +16,16 @@ class MenuVC: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.rowHeight = 130
+        tableView.estimatedRowHeight = 130
+        tableView.rowHeight = UITableView.automaticDimension
         setSegmentControl()
         setInfo()
+    }
+    
+    @IBAction func goCart(_ sender: Any) {
+        let cart = self.storyboard?.instantiateViewController(withIdentifier: "CartVC") as! CartVC
+        cart.title = "장바구니"
+        self.navigationController?.pushViewController(cart, animated: false)
     }
     
     private func setInfo() {

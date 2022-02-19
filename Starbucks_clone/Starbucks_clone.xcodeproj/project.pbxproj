@@ -22,6 +22,11 @@
 		A949022D27BE4AA700CF76BE /* 봄 딸기 라떼d.png in Resources */ = {isa = PBXBuildFile; fileRef = A949022C27BE4AA700CF76BE /* 봄 딸기 라떼d.png */; };
 		A949022F27BE4BB600CF76BE /* 봄 딸기 그린 크림 프라푸치노d.png in Resources */ = {isa = PBXBuildFile; fileRef = A949022E27BE4BB600CF76BE /* 봄 딸기 그린 크림 프라푸치노d.png */; };
 		A949023127BE4BB900CF76BE /* 스프링 가든 자스민 드링크d.png in Resources */ = {isa = PBXBuildFile; fileRef = A949023027BE4BB900CF76BE /* 스프링 가든 자스민 드링크d.png */; };
+		A949023327BE69A000CF76BE /* CartAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A949023227BE69A000CF76BE /* CartAlertVC.swift */; };
+		A949023627BE7B5A00CF76BE /* CartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A949023527BE7B5A00CF76BE /* CartVC.swift */; };
+		A949023A27BE9FCC00CF76BE /* 장바구니3.png in Resources */ = {isa = PBXBuildFile; fileRef = A949023727BE9FCB00CF76BE /* 장바구니3.png */; };
+		A949023B27BE9FCC00CF76BE /* 장바구니1.png in Resources */ = {isa = PBXBuildFile; fileRef = A949023827BE9FCB00CF76BE /* 장바구니1.png */; };
+		A949023C27BE9FCC00CF76BE /* 장바구니2.png in Resources */ = {isa = PBXBuildFile; fileRef = A949023927BE9FCB00CF76BE /* 장바구니2.png */; };
 		A9D8B20027B9FE9600712356 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D8B1FF27B9FE9600712356 /* AppDelegate.swift */; };
 		A9D8B20227B9FE9600712356 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D8B20127B9FE9600712356 /* SceneDelegate.swift */; };
 		A9D8B20427B9FE9600712356 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D8B20327B9FE9600712356 /* MenuVC.swift */; };
@@ -52,6 +57,11 @@
 		A949022C27BE4AA700CF76BE /* 봄 딸기 라떼d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "봄 딸기 라떼d.png"; sourceTree = "<group>"; };
 		A949022E27BE4BB600CF76BE /* 봄 딸기 그린 크림 프라푸치노d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "봄 딸기 그린 크림 프라푸치노d.png"; sourceTree = "<group>"; };
 		A949023027BE4BB900CF76BE /* 스프링 가든 자스민 드링크d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "스프링 가든 자스민 드링크d.png"; sourceTree = "<group>"; };
+		A949023227BE69A000CF76BE /* CartAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartAlertVC.swift; sourceTree = "<group>"; };
+		A949023527BE7B5A00CF76BE /* CartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartVC.swift; sourceTree = "<group>"; };
+		A949023727BE9FCB00CF76BE /* 장바구니3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "장바구니3.png"; sourceTree = "<group>"; };
+		A949023827BE9FCB00CF76BE /* 장바구니1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "장바구니1.png"; sourceTree = "<group>"; };
+		A949023927BE9FCB00CF76BE /* 장바구니2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "장바구니2.png"; sourceTree = "<group>"; };
 		A9D8B1FC27B9FE9600712356 /* Starbucks_clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Starbucks_clone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9D8B1FF27B9FE9600712356 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9D8B20127B9FE9600712356 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +92,9 @@
 		A949021A27BE370000CF76BE /* png */ = {
 			isa = PBXGroup;
 			children = (
+				A949023827BE9FCB00CF76BE /* 장바구니1.png */,
+				A949023927BE9FCB00CF76BE /* 장바구니2.png */,
+				A949023727BE9FCB00CF76BE /* 장바구니3.png */,
 				A949023027BE4BB900CF76BE /* 스프링 가든 자스민 드링크d.png */,
 				A949022E27BE4BB600CF76BE /* 봄 딸기 그린 크림 프라푸치노d.png */,
 				A949022C27BE4AA700CF76BE /* 봄 딸기 라떼d.png */,
@@ -108,6 +121,15 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		A949023427BE6A6B00CF76BE /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				A949023527BE7B5A00CF76BE /* CartVC.swift */,
+				A949023227BE69A000CF76BE /* CartAlertVC.swift */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
 		A9D8B1F327B9FE9600712356 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +154,7 @@
 				A949022927BE46A600CF76BE /* Main */,
 				A9D8B22027BBC25800712356 /* Menu */,
 				A9D8B21F27BBBC9300712356 /* Order */,
+				A949023427BE6A6B00CF76BE /* Cart */,
 				A949021A27BE370000CF76BE /* png */,
 				A9D8B20527B9FE9600712356 /* Main.storyboard */,
 				A9D8B20827B9FE9700712356 /* Assets.xcassets */,
@@ -223,7 +246,9 @@
 			files = (
 				A949021927BE33EC00CF76BE /* 리저브 에스프레소.png in Resources */,
 				A949022D27BE4AA700CF76BE /* 봄 딸기 라떼d.png in Resources */,
+				A949023B27BE9FCC00CF76BE /* 장바구니1.png in Resources */,
 				A949023127BE4BB900CF76BE /* 스프링 가든 자스민 드링크d.png in Resources */,
+				A949023A27BE9FCC00CF76BE /* 장바구니3.png in Resources */,
 				A9D8B20C27B9FE9700712356 /* LaunchScreen.storyboard in Resources */,
 				A949021C27BE3CCE00CF76BE /* 봄 딸기 그린 크림 프라푸치노.png in Resources */,
 				A949022827BE455200CF76BE /* 블론드.png in Resources */,
@@ -236,6 +261,7 @@
 				A9D8B20727B9FE9600712356 /* Main.storyboard in Resources */,
 				A949022527BE455200CF76BE /* 콜드 브루.png in Resources */,
 				A949022627BE455200CF76BE /* 리저브 드립.png in Resources */,
+				A949023C27BE9FCC00CF76BE /* 장바구니2.png in Resources */,
 				A949022F27BE4BB600CF76BE /* 봄 딸기 그린 크림 프라푸치노d.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,11 +277,13 @@
 				A9D8B20027B9FE9600712356 /* AppDelegate.swift in Sources */,
 				A9D8B21E27BBB60600712356 /* OrderCell.swift in Sources */,
 				A9D8B23127BCEFFA00712356 /* TabBarController.swift in Sources */,
+				A949023627BE7B5A00CF76BE /* CartVC.swift in Sources */,
 				A9D8B22527BBC31000712356 /* AdVC.swift in Sources */,
 				A949020A27BD12E300CF76BE /* OrderDetail.swift in Sources */,
 				A9D8B21C27BBA7A400712356 /* OrderVC.swift in Sources */,
 				A9D8B21827BB95B300712356 /* MenuCell.swift in Sources */,
 				A9D8B20227B9FE9600712356 /* SceneDelegate.swift in Sources */,
+				A949023327BE69A000CF76BE /* CartAlertVC.swift in Sources */,
 				A949020E27BD3CC300CF76BE /* SelectVC.swift in Sources */,
 				A9D8B21627BB83BC00712356 /* MenuBar.swift in Sources */,
 			);

@@ -24,6 +24,7 @@ class OrderDetail: UIViewController {
     
     @IBAction func orderBtn(_ sender: Any) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "SelectVC") as! SelectVC
+        vc.info = detailmenu
         self.present(vc,animated: true)
     }
     
@@ -33,6 +34,11 @@ class OrderDetail: UIViewController {
         self.title = detailmenu?.name
         //self.navigationController?.isNavigationBarHidden = true
         setDisplay()
+    }
+    
+    // tabbar 다시 보이게
+    override func viewWillDisappear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = false
     }
 
     func setDisplay() {
@@ -49,6 +55,7 @@ class OrderDetail: UIViewController {
     }
     
 }
+
 
 extension OrderDetail: OrderDelgate {
     func passInfo(_ infos: Menu) {
