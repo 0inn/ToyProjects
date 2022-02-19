@@ -130,6 +130,17 @@
 			path = Cart;
 			sourceTree = "<group>";
 		};
+		A949023D27C0BE1F00CF76BE /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				A9D8B21B27BBA7A400712356 /* OrderVC.swift */,
+				A9D8B21D27BBB60600712356 /* OrderCell.swift */,
+				A949020927BD12E300CF76BE /* OrderDetail.swift */,
+				A949020D27BD3CC300CF76BE /* SelectVC.swift */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
 		A9D8B1F327B9FE9600712356 = {
 			isa = PBXGroup;
 			children = (
@@ -153,7 +164,7 @@
 				A9D8B20127B9FE9600712356 /* SceneDelegate.swift */,
 				A949022927BE46A600CF76BE /* Main */,
 				A9D8B22027BBC25800712356 /* Menu */,
-				A9D8B21F27BBBC9300712356 /* Order */,
+				A949023D27C0BE1F00CF76BE /* Order */,
 				A949023427BE6A6B00CF76BE /* Cart */,
 				A949021A27BE370000CF76BE /* png */,
 				A9D8B20527B9FE9600712356 /* Main.storyboard */,
@@ -162,18 +173,6 @@
 				A9D8B20D27B9FE9700712356 /* Info.plist */,
 			);
 			path = Starbucks_clone;
-			sourceTree = "<group>";
-		};
-		A9D8B21F27BBBC9300712356 /* Order */ = {
-			isa = PBXGroup;
-			children = (
-				A9D8B21B27BBA7A400712356 /* OrderVC.swift */,
-				A9D8B21D27BBB60600712356 /* OrderCell.swift */,
-				A949020927BD12E300CF76BE /* OrderDetail.swift */,
-				A949020D27BD3CC300CF76BE /* SelectVC.swift */,
-			);
-			name = Order;
-			path = "주문리스트";
 			sourceTree = "<group>";
 		};
 		A9D8B22027BBC25800712356 /* Menu */ = {
