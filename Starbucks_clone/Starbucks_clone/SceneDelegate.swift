@@ -28,7 +28,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if let imageView = imageView {
             imageView.removeFromSuperview()
             
-            // 앱 꺼졌다가 다시 켜졌을 때, alert창 띄우기
+            // 앱 꺼졌다가 다시 켜졌을 때, alert창 띄우기 -> present 위에서 안뜸 - UIView내에서만 작동
             let alert = UIAlertController(title: "알림창", message: "이어서 사용하시겠습니까?", preferredStyle: UIAlertController.Style.alert)
             alert.addAction(UIAlertAction(title: "네", style: UIAlertAction.Style.default, handler: nil))
             self.window?.rootViewController?.present(alert, animated: true, completion: nil)
